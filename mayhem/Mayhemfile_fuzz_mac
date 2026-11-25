@@ -1,0 +1,7 @@
+project: savantenvs/gr-ieee802-11
+target: fuzz_mac
+
+cmds:
+  - cmd: /mayhem/fuzz_mac
+    libfuzzer: true
+    timeout: 10

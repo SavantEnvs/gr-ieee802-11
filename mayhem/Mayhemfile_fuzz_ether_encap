@@ -1,0 +1,11 @@
+project: savantenvs/gr-ieee802-11
+target: fuzz_ether_encap
+
+cmds:
+  - cmd: /mayhem/fuzz_ether_encap
+    libfuzzer: true
+    timeout: 10
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ether_encap/testsuite

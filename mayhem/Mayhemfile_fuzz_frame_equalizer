@@ -1,0 +1,7 @@
+project: savantenvs/gr-ieee802-11
+target: fuzz_frame_equalizer
+
+cmds:
+  - cmd: /mayhem/fuzz_frame_equalizer
+    libfuzzer: true
+    timeout: 10
